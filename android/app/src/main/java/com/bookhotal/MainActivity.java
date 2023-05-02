@@ -1,4 +1,4 @@
-package com.mulazamat;
+package com.bookhotal;
 
 import android.os.Bundle;//react native screen lib
 import com.facebook.react.ReactActivity;

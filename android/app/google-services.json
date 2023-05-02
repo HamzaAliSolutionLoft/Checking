@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "1037542583960",
-    "project_id": "mulazmat-bd18f",
-    "storage_bucket": "mulazmat-bd18f.appspot.com"
+    "project_number": "299345767605",
+    "project_id": "hotal-booking-31cc7",
+    "storage_bucket": "hotal-booking-31cc7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1037542583960:android:9ded214f11a303af0d2aed",
+        "mobilesdk_app_id": "1:299345767605:android:f1f16369a32c516dd962fc",
         "android_client_info": {
-          "package_name": "com.mulazamat"
+          "package_name": "com.bookhotal"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1037542583960-e20q2br7dr9q9ia5qelpo7rgh5o68c55.apps.googleusercontent.com",
+          "client_id": "299345767605-s7su2rdh9duljmalmeq4e5rb6591ou3e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.mulazamat",
-            "certificate_hash": "2b4b1a9f66cb2c81eb288316c5176570614ac38a"
+            "package_name": "com.bookhotal",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
           }
         },
         {
-          "client_id": "1037542583960-5mu7b7fdpt986e5e5lrndo753g47qukh.apps.googleusercontent.com",
+          "client_id": "299345767605-pq044bpd64il3a4ub3g9m4alfptbdapi.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCU1BZUonEjN-Xp2ItoQrWhDcQB87gzim0"
+          "current_key": "AIzaSyABobln87ntnyVnT6aPVqZN85BkFbn9iX4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1037542583960-5mu7b7fdpt986e5e5lrndo753g47qukh.apps.googleusercontent.com",
+              "client_id": "299345767605-pq044bpd64il3a4ub3g9m4alfptbdapi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

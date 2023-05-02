@@ -1,4 +1,4 @@
-package com.mulazamat.newarchitecture.components;
+package com.bookhotal.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;
