@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, StyleSheet, Image, TouchableOpacity, Alert } from "react-native";
+import {View, StyleSheet, Image, TouchableOpacity, Alert} from 'react-native';
 
 import Paddings from '../../constants/Paddings';
 import Colors from '../../constants/Colors';
@@ -11,11 +11,11 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import MyInputText from '../../components/MyTextInput';
 
 import lang from '../../constants/DefaultLanguage';
-import auth, { firebase } from "@react-native-firebase/auth";
-import LoadingIndicator from "../../components/LoadingIndicator";
+import auth, {firebase} from '@react-native-firebase/auth';
+import LoadingIndicator from '../../components/LoadingIndicator';
 
 const ForgotPasswordScreen = props => {
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   //States
   const [userEmail, setEmail] = React.useState('');
   const [emailErrorText, setEmailErrorText] = useState('');
@@ -43,30 +43,27 @@ const ForgotPasswordScreen = props => {
       return false;
     } else {
       //if every things is right then send login request to server
-      forgotPassword(userEmail)
+      forgotPassword(userEmail);
     }
   };
 
-  const forgotPassword = (Email) => {
-    setLoading(true)
-    firebase.auth().sendPasswordResetEmail( Email, null)
+  const forgotPassword = Email => {
+    setLoading(true);
+    firebase
+      .auth()
+      .sendPasswordResetEmail(Email, null)
       .then(() => {
-        Alert.alert(
-          'SuccessFull',
-          "Password Reset email sent to " + Email,
-          [
-            {
-              text: 'OK',
-              onPress: () =>
-               props.navigation.pop()
-            },
-          ],
-        );
+        Alert.alert('SuccessFull', 'Password Reset email sent to ' + Email, [
+          {
+            text: 'OK',
+            onPress: () => props.navigation.pop(),
+          },
+        ]);
       })
       .catch(function (e) {
-        alert(e.message)
+        alert(e.message);
       });
-        setLoading(false)
+    setLoading(false);
   };
 
   return (

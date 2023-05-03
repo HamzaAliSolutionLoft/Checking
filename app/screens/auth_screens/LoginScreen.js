@@ -88,11 +88,11 @@ const LoginScreen = props => {
       .signInWithEmailAndPassword(userEmail, userPassword)
       .then(userCredentials => {
         // getUserData(userCredentials?.user?.uid);
-        if(userCredentials.user.emailVerified){
-        getUserData(userCredentials.user?.uid)
-        }else {
-          setLoading(false)
-          auth().signOut()
+        if (userCredentials.user.emailVerified) {
+          getUserData(userCredentials.user?.uid);
+        } else {
+          setLoading(false);
+          auth().signOut();
           showAlertToUserThatEmailIsNotVerified();
         }
       })
@@ -162,10 +162,10 @@ const LoginScreen = props => {
     return (
       <View style={styles.headerCNTR}>
         {/* Mploya Login */}
-        <HeadingText style={styles.headingTxt}>Nokri</HeadingText>
+        <HeadingText style={styles.headingTxt}>Book Hotel</HeadingText>
         {/* Login With Your Mploya */}
         <NormalText style={styles.loginWithTxt}>
-          Login With Your Nokri Account
+          Login With Your Book Hotel Account
         </NormalText>
       </View>
     );
